@@ -1,47 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>eme.cu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f3e9db;
-      color: #3B4C4A;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+      font-family: 'Georgia', serif;
+      background-color: #F6EFE7; /* Marfil cálido */
+      color: #4F4C48; /* Gris grafito suave */
       text-align: center;
     }
-
-    .logo {
-      max-width: 300px;
-      margin-bottom: 2rem;
+    header {
+      padding: 20px 0;
     }
-
+    .logo img {
+      width: 200px;
+      max-width: 80%;
+    }
     h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
-      margin: 0;
-      color: #2f4a5a;
+      font-size: 2em;
+      color: #4F4C48;
+      margin: 10px 0 5px;
     }
-
-    p {
-      font-size: 1.2rem;
-      color: #6f4e37;
-      margin-top: 0.5rem;
+    .slogan {
+      font-size: 1em;
+      color: #6F1D1B; /* Vino profundo */
+      margin-bottom: 30px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #D6C6B0; /* Beige tostado claro */
+      padding: 10px 0;
+    }
+    nav a {
+      margin: 0 20px;
+      color: #005B7F; /* Azul acento */
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+    h2 {
+      color: #6F1D1B; /* Vino profundo */
+    }
+    .precio {
+      font-size: 1.2em;
+      color: #4F4C48;
+      margin-bottom: 20px;
+    }
+    .cheesecake-img {
+      width: 300px;
+      max-width: 90%;
+      border-radius: 10px;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="eme.cu logo" class="logo"/>
-  <h1>eme.cu</h1>
-  <p>Un antojo. Mil detalles.</p>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="eme.cu logo">
+    </div>
+    <h1>eme.cu</h1>
+    <p class="slogan">Son los pequeños detalles.</p>
+  </header>
+
+  <nav>
+    <a href="#vainilla">Vainilla</a>
+    <a href="#blueberries">Blueberries</a>
+    <a href="#manzana">Manzana</a>
+  </nav>
+
+  <section id="vainilla">
+    <h2>Vainilla</h2>
+    <p class="precio">$100 MXN</p>
+    <p>Lo simple sabe mejor.</p>
+    <img src="vainilla.png" alt="Cheesecake de Vainilla" class="cheesecake-img">
+  </section>
+
+  <section id="blueberries">
+    <h2>Blueberries</h2>
+    <p class="precio">$200 MXN</p>
+    <p>El balance exacto.</p>
+    <img src="blueberries.png" alt="Cheesecake de Blueberries" class="cheesecake-img">
+  </section>
+
+  <section id="manzana">
+    <h2>Manzana</h2>
+    <p class="precio">$300 MXN</p>
+    <p>Lo inesperado, bien hecho.</p>
+    <img src="manzana.png" alt="Cheesecake de Manzana" class="cheesecake-img">
+  </section>
 </body>
 </html>
