@@ -8,12 +8,12 @@
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-color: #F6EFE7; /* Marfil cálido */
-      color: #8D8577; /* Gris topo */
+      background-color: #F6EFE7;
+      color: #8D8577;
       text-align: center;
     }
     header {
-      padding: 10px 0 0;
+      padding: 15px 0 0;
       position: relative;
       height: 100px;
     }
@@ -30,19 +30,19 @@
       top: 20px;
       right: 20px;
       font-size: 1em;
-      color: #6F1D1B; /* Vino profundo */
+      color: #6F1D1B;
       margin: 0;
     }
     nav {
       display: flex;
       justify-content: center;
-      background-color: #D6C6B0; /* Beige piedra */
+      background-color: #D6C6B0;
       padding: 10px 0;
       margin-top: 60px;
     }
     nav a {
       margin: 0 20px;
-      color: #4B5A6A; /* Azul gris oscuro */
+      color: #4B5A6A;
       text-decoration: none;
       font-weight: bold;
       font-size: 1.1em;
@@ -50,13 +50,14 @@
     section {
       padding: 40px 20px;
       border-bottom: 1px solid #ccc;
+      position: relative;
     }
     h2 {
-      color: #6F1D1B; /* Vino profundo */
+      color: #6F1D1B;
     }
     .precio {
       font-size: 1.2em;
-      color: #8D8577; /* Gris topo */
+      color: #8D8577;
       margin-top: 10px;
     }
     .cheesecake-img {
@@ -64,6 +65,17 @@
       max-width: 90%;
       border-radius: 10px;
       margin-top: 10px;
+    }
+    .boton-comprar {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #6F1D1B;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      position: relative;
     }
   </style>
 </head>
@@ -86,6 +98,7 @@
     <img src="vainilla.jpg" alt="Cheesecake de Vainilla" class="cheesecake-img">
     <p>Lo simple sabe mejor.</p>
     <p class="precio">$100 MXN</p>
+    <a href="https://wa.me/5218119097279?text=Hola%2C%20quiero%20comprar%20el%20cheesecake%20de%20vainilla" class="boton-comprar" target="_blank">Comprar</a>
   </section>
 
   <section id="blueberries">
@@ -93,6 +106,7 @@
     <img src="blueberries.jpg" alt="Cheesecake de Blueberries" class="cheesecake-img">
     <p>El balance exacto.</p>
     <p class="precio">$200 MXN</p>
+    <a href="https://wa.me/5218119097279?text=Hola%2C%20quiero%20comprar%20el%20cheesecake%20de%20blueberries" class="boton-comprar" target="_blank">Comprar</a>
   </section>
 
   <section id="manzana">
@@ -100,6 +114,7 @@
     <img src="manzana.png" alt="Cheesecake de Manzana" class="cheesecake-img">
     <p>Lo inesperado, bien hecho.</p>
     <p class="precio">$300 MXN</p>
+    <a href="https://wa.me/5218119097279?text=Hola%2C%20quiero%20comprar%20el%20cheesecake%20de%20manzana" class="boton-comprar" target="_blank">Comprar</a>
   </section>
 </body>
 </html>
